@@ -2,6 +2,10 @@
 
 Template for @nkp/ npm packages.
 
+This tempalte uses pnpm as a package manager instead of npm or yarn.
+
+Pnpm improves local development by symbolically linking dependencies and speeding up the installation process.
+
 Comes with:
 
 1. Language: TypeScript & JavaScript
@@ -27,13 +31,15 @@ Comes with:
     2. run `npm install`
     3. run `npm test`
 3. Find and replace placeholders in the project
-    1. ---PACKAGE-DESCRIPTION---
-    2. ---NPM-PACKAGE---
-    3. ---GITHUB-URL---
-    4. ---GITHUB-ORG-NAME---
-    5. ---GITHUB-PROJECT-NAME---
-    6. ---NPM-ORG-NAME---
-    7. ---PACKAGE-NAME---
+    1. Functions to create discrete and continuous iterable ranges.
+    2. @nkp/range
+    3. https://github.com/NickKelly1/nkp-range.git
+    4. NickKelly1
+    5. nkp-range
+    6. nkp
+    7. range
+    8. Functions to create discrete and continuous iterable ranges.
+    9. ---USAGE-TEXT---
 4. Remove stubs and reset the repos state
     1. Remove the contents of `src/index.ts`
     2. set the testEnvironment in `jest.config.ts
@@ -43,47 +49,87 @@ Comes with:
     2. Add the token to this GitHub repositories secrets as "NPM_TOKEN"
 6. Set up the README.MD
 
-## @---NPM-ORG-NAME---/---PACKAGE-NAME---
+## @nkp/range
 
 Fill in the following:
 
 ```txt
-![npm version](https://badge.fury.io/js/%40---NPM-ORG-NAME---%2F---PACKAGE-NAME---.svg)
-[![Node.js Package](https://github.com/---GITHUB-ORG-NAME---/---PACKAGE-NAME---/actions/workflows/release.yml/badge.svg)](https://github.com/---GITHUB-ORG-NAME---/---GITHUB-PROJECT-NAME---/actions/workflows/release.yml)
-![Known Vulnerabilities](https://snyk.io/test/github/---GITHUB-ORG-NAME---/---GITHUB-PROJECT-NAME---/badge.svg)
+![npm version](https://badge.fury.io/js/%40nkp%2Frange.svg)
+[![Node.js Package](https://github.com/NickKelly1/range/actions/workflows/release.yml/badge.svg)](https://github.com/NickKelly1/nkp-range/actions/workflows/release.yml)
+![Known Vulnerabilities](https://snyk.io/test/github/NickKelly1/nkp-range/badge.svg)
 ```
 
----DESCRIPTION-TEXT---
+Functions to create discrete and continuous iterable ranges.
 
 ## Table of contents
 
 - [Installation](#installation)
   - [npm](#npm)
   - [yarn](#yarn)
+  - [pnpm](#pnpm)
   - [Exports](#exports)
 - [Usage](#usage)
+- [Updating Dependencies](#updating-dependencies)
 
 ## Installation
 
 ### NPM
 
 ```sh
-npm install @---NPM-ORG-NAME---/---PACKAGE-NAME---
+npm install @nkp/range
 ```
 
 ### Yarn
 
 ```sh
-yarn add @---NPM-ORG-NAME---/---PACKAGE-NAME---
+yarn add @nkp/range
+```
+
+### PNPM
+
+```sh
+pnpm add @nkp/range
 ```
 
 ### Exports
 
-`@---NPM-ORG-NAME---/---PACKAGE-NAME---` targets CommonJS and ES modules. To utilise ES modules consider using a bundler like `webpack` or `rollup`.
+`@nkp/range` targets CommonJS and ES modules. To utilise ES modules consider using a bundler like `webpack` or `rollup`.
 
 ## Usage
 
----USAGE-TEXT---
+
+```ts
+import { range } from '@nkp/range';
+
+for (const state of range) {
+    const {} = state;
+    //
+}
+```
+
+## Updating dependencies
+
+To update dependencies run one of
+
+```sh
+# if npm
+# update package.json
+npx npm-check-updates -u
+# install
+npm install
+
+# if yarn
+# update package.json
+yarn create npm-check-updates -u
+# install
+yarn
+
+# if pnpm
+# update package.json
+pnpx npm-check-updates -u
+# install
+pnpm install
+```
 
 ## Publishing
 

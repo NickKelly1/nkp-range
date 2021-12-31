@@ -1,5 +1,5 @@
 {
-  "window.title": "---NPM-PACKAGE---",
+  "window.title": "@nkp/range",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
