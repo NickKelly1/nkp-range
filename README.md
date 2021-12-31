@@ -1,4 +1,4 @@
-## @nkp/range
+# @nkp/range
 
 [![npm version](https://badge.fury.io/js/%40nkp%2Frange.svg)](https://www.npmjs.com/package/@nkp/range)
 [![deploy status](https://github.com/NickKelly1/nkp-range/actions/workflows/release.yml/badge.svg)](https://github.com/NickKelly1/nkp-range/actions/workflows/release.yml)
@@ -29,22 +29,23 @@ for (const state of range({ start: 0, end: 6, step: 2, inclusive: true })) {
   - [Exports](#exports)
 - [Usage](#usage)
 - [Updating Dependencies](#updating-dependencies)
+- [Publishing](#publishing)
 
 ## Installation
 
-### NPM
+### npm
 
 ```sh
 npm install @nkp/range
 ```
 
-### Yarn
+### yarn
 
 ```sh
 yarn add @nkp/range
 ```
 
-### PNPM
+### pnpm
 
 ```sh
 pnpm add @nkp/range
