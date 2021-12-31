@@ -1,10 +1,10 @@
 ## @nkp/range
 
-![npm version](https://badge.fury.io/js/%40nkp%2Frange.svg)
-[![Node.js Package](https://github.com/NickKelly1/nkp-range/actions/workflows/release.yml/badge.svg)](https://github.com/NickKelly1/nkp-range/actions/workflows/release.yml)
-![Known Vulnerabilities](https://snyk.io/test/github/NickKelly1/nkp-range/badge.svg)
+[![npm version](https://badge.fury.io/js/%40nkp%2Frange.svg)](https://www.npmjs.com/package/@nkp/range)
+[![deploy status](https://github.com/NickKelly1/nkp-range/actions/workflows/release.yml/badge.svg)](https://github.com/NickKelly1/nkp-range/actions/workflows/release.yml)
+[![known vulnerabilities](https://snyk.io/test/github/NickKelly1/nkp-range/badge.svg)](https://snyk.io/test/github/NickKelly1/nkp-range)
 
-Functions to create discrete and continuous iterable ranges.
+Zero dependency utility to create iterable discrete and continuous ranges.
 
 ```ts
 import { range } from '@nkp/range';
