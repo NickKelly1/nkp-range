@@ -22,14 +22,17 @@ for (const state of range({ start: 0, end: 6, step: 2, inclusive: true })) {
 
 ## Table of contents
 
+- [Exports](#exports)
 - [Installation](#installation)
   - [npm](#npm)
   - [yarn](#yarn)
   - [pnpm](#pnpm)
-  - [Exports](#exports)
 - [Usage](#usage)
-- [Updating Dependencies](#updating-dependencies)
 - [Publishing](#publishing)
+
+## Exports
+
+`@nkp/result` exports both CommonJS and ES modules.
 
 ## Installation
 
@@ -51,10 +54,6 @@ yarn add @nkp/range
 pnpm add @nkp/range
 ```
 
-### Exports
-
-`@nkp/range` targets CommonJS and ES modules. To utilise ES modules consider using a bundler like `webpack` or `rollup`.
-
 ## Usage
 
 
@@ -70,30 +69,6 @@ for (const state of range({ start: 0, end: 6, step: 2, inclusive: true })) {
 // 2
 // 4
 // 6
-```
-
-## Updating dependencies
-
-To update dependencies run one of
-
-```sh
-# if npm
-# update package.json
-npx npm-check-updates -u
-# install
-npm install
-
-# if yarn
-# update package.json
-yarn create npm-check-updates -u
-# install
-yarn
-
-# if pnpm
-# update package.json
-pnpx npm-check-updates -u
-# install
-pnpm install
 ```
 
 ## Publishing
