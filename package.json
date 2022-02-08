@@ -3,8 +3,14 @@
   "sideEffects": false,
   "version": "1.0.1",
   "description": "Functions to create discrete and continuous iterable ranges.",
-  "main": "cjs/index.js",
-  "module": "es/index.js",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    "import": "./esm/index.js",
+    "require": "./cjs/index.js",
+    "types": "./types/index.d.js"
+  },
   "author": "Nick Kelly",
   "homepage": "https://github.com/NickKelly1/nkp-range.git#readme",
   "readme": "https://github.com/NickKelly1/nkp-range.git#readme",
