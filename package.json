@@ -1,7 +1,7 @@
 {
   "name": "@nkp/range",
   "sideEffects": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Functions to create discrete and continuous iterable ranges.",
   "main": "cjs/index.js",
   "module": "es/index.js",
