@@ -32,7 +32,7 @@ for (const state of range({ start: 0, end: 6, step: 2, inclusive: true })) {
 
 ## Exports
 
-`@nkp/result` exports both CommonJS and ES modules.
+`@nkp/range` exports both CommonJS and ES modules.
 
 ## Installation
 
